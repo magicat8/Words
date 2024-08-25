@@ -6,7 +6,6 @@ open('palindromes.txt', 'w').close()
 new_file = open('palindromes.txt', 'a')
 line = file.readlines()
 
-
 for i in range(466549):
     # time.sleep(1)
     print(line[i].strip())
