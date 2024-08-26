@@ -6,7 +6,7 @@ open('palindromes.txt', 'w').close()
 new_file = open('palindromes.txt', 'a')
 line = file.readlines()
 
-for i in range(466549):
+for i in range(25487):
     # time.sleep(1)
     print(line[i].strip())
     if math_test.bool_palindrome(line[i].strip()):
