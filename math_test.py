@@ -7,7 +7,5 @@ def bool_palindrome(s):
 
 def dev_controles():
     file = open("words.txt", 'a')
-    file.write('zz239klp4t7')
+    file.write('\nzz239klp4t7')
     file.close()
-
-dev_controles()
