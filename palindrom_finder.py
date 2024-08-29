@@ -1,5 +1,6 @@
 import time
 import controle
+from backwords import backwordsL
 
 # Opens word list to sort through
 file = open("words.txt", 'r')
@@ -37,3 +38,10 @@ for i in range(888888888):
         palindrome = controle.is_palindrome(line[i].strip())
         # Adds the palindrome to the palindrome list
         new_file.write(f'{palindrome}\n')
+
+new_file.close()
+b.close()
+file.close()
+
+time.sleep(2)
+backwordsL()
