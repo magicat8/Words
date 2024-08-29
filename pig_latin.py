@@ -1,0 +1,1 @@
+''' def constinints. split word'''
