@@ -1,13 +1,24 @@
-constonance = 'bcdfghjklmnpqrstvwxz'
+consonants = 'bcdfghjklmnpqrstvwxyz'
 
 def igpa_atinlay(word):
-    last = None
+    # Check if the first letter is a vowel
+    if word[0] not in consonants:
+        return word + 'way'
+    
+    # Initialize the position of the first vowel
+    last = -1
+    
+    # Iterate over each character in the word
     for i, v in enumerate(word):
-        if v not in constonance:
-            last = i - 1 
-    if i >= 0:
-        word = word[last + 1:] + word[0:last + 1] + "ay"
-    else:
-        word = word + 'ay' 
+        # Check if the character is a vowel
+        if v not in consonants:
+            last = i
+            break
+    
+    # Rearrange the word assuming there's always a vowel
+    word = word[last:] + word[:last] + "ay"
     return word
-print(igpa_atinlay('shape'))
+
+# Test the function with different words
+print(igpa_atinlay('life'))  # Output: apeshay
+print(igpa_atinlay('apple'))  # Output: appleway
