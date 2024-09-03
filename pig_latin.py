@@ -21,4 +21,3 @@ def igpa_atinlay(word):
 
 # Test the function with different words
 print(igpa_atinlay('life'))  # Output: apeshay
-print(igpa_atinlay('apple'))  # Output: appleway
