@@ -20,4 +20,4 @@ def igpa_atinlay(word):
     return word
 
 # Test the function with different words
-print(igpa_atinlay('life'))  # Output: apeshay
+print(igpa_atinlay('life'))
